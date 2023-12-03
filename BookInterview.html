@@ -1,0 +1,52 @@
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="ft-form.css">
+</head>
+
+ <body style ="background-image:url('https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&w=600');background-repeat:no-repeat;background-size:cover;">
+<form action="BookInterview.php" id="ft-form" method="POST" accept-charset="UTF-8">
+  <fieldset>
+    <center> <h1> <B>BOOK EVENT </B></h1> </center> 
+    <label>
+      UserName:
+      <input type="text" name="name" required placeholder="plz enter ur login username">
+    </label>
+    <div class="two-cols">
+      <label>
+        Email address
+        <input type="email" name="email" required placeholder="plz enter valid email-id">
+      </label>
+      <label>
+        Event Name:
+        <input type="text" name="ename">
+      </label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Event Date:</legend>
+    <div class="two-cols">
+      <label>
+        Date
+        <input type="date" name="AppointmentDate" required>
+      </label>
+      
+    </div>
+    <p>Confirmation requested by</p>
+    <div class="inline">
+      <label>
+        <input type="radio" name="Confirmation" value="email" checked>
+        Email
+      </label>
+     
+    </div>
+  </fieldset>
+  <div class="btns">
+    <input type="text" name="_gotcha" value="" style="display:none;">
+    <input type="submit" value="Submit request">
+  </div>
+</form>
+</body>
+
+</html>
